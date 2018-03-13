@@ -1,4 +1,3 @@
-//asdasd
 function printList (list)
 {
   while (list)
@@ -41,4 +40,17 @@ function printReverseListRec(list)
   console.log(list.value);
 }
 
-
+var list = {
+  value: 1,
+  next: {
+    value: 2,
+    next: {
+      value: 3,
+      next: {
+        value: 4,
+        next: null
+      }
+    }
+  }
+};
+printReverseList(list);
